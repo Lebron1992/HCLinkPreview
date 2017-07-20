@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03A71744858ACE45C53743AE /* Pods_HCLinkPreview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60E3B579A9E8357DFAB9B98 /* Pods_HCLinkPreview.framework */; };
+		FDBF974D1F21BF5200B3CA60 /* HCOGDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBF97491F21BF5200B3CA60 /* HCOGDataFetcher.swift */; };
+		FDBF974E1F21BF5200B3CA60 /* HCOGTypeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBF974A1F21BF5200B3CA60 /* HCOGTypeProtocols.swift */; };
+		FDBF974F1F21BF5200B3CA60 /* HCOGTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBF974B1F21BF5200B3CA60 /* HCOGTypes.swift */; };
+		FDBF97501F21BF5200B3CA60 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBF974C1F21BF5200B3CA60 /* StringExtensions.swift */; };
 		FDF697191F204AED00A7FDD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF697181F204AED00A7FDD6 /* AppDelegate.swift */; };
 		FDF6971B1F204AED00A7FDD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF6971A1F204AED00A7FDD6 /* ViewController.swift */; };
 		FDF6971E1F204AED00A7FDD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDF6971C1F204AED00A7FDD6 /* Main.storyboard */; };
@@ -15,6 +20,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F96F05E804CC1402CC0AC35 /* Pods-HCLinkPreview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCLinkPreview.release.xcconfig"; path = "Pods/Target Support Files/Pods-HCLinkPreview/Pods-HCLinkPreview.release.xcconfig"; sourceTree = "<group>"; };
+		D60E3B579A9E8357DFAB9B98 /* Pods_HCLinkPreview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HCLinkPreview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F57F637123E0FDD33300E446 /* Pods-HCLinkPreview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCLinkPreview.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HCLinkPreview/Pods-HCLinkPreview.debug.xcconfig"; sourceTree = "<group>"; };
+		FDBF97491F21BF5200B3CA60 /* HCOGDataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCOGDataFetcher.swift; sourceTree = "<group>"; };
+		FDBF974A1F21BF5200B3CA60 /* HCOGTypeProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCOGTypeProtocols.swift; sourceTree = "<group>"; };
+		FDBF974B1F21BF5200B3CA60 /* HCOGTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCOGTypes.swift; sourceTree = "<group>"; };
+		FDBF974C1F21BF5200B3CA60 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		FDF697151F204AED00A7FDD6 /* HCLinkPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HCLinkPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF697181F204AED00A7FDD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDF6971A1F204AED00A7FDD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +41,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03A71744858ACE45C53743AE /* Pods_HCLinkPreview.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E5980EDAE7CDE0648CF049A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D60E3B579A9E8357DFAB9B98 /* Pods_HCLinkPreview.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA9B9CB388EA250D113217E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F57F637123E0FDD33300E446 /* Pods-HCLinkPreview.debug.xcconfig */,
+				6F96F05E804CC1402CC0AC35 /* Pods-HCLinkPreview.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FDBF97481F21BF4500B3CA60 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				FDBF97491F21BF5200B3CA60 /* HCOGDataFetcher.swift */,
+				FDBF974A1F21BF5200B3CA60 /* HCOGTypeProtocols.swift */,
+				FDBF974B1F21BF5200B3CA60 /* HCOGTypes.swift */,
+				FDBF974C1F21BF5200B3CA60 /* StringExtensions.swift */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
 		FDF6970C1F204AED00A7FDD6 = {
 			isa = PBXGroup;
 			children = (
 				FDF697171F204AED00A7FDD6 /* HCLinkPreview */,
 				FDF697161F204AED00A7FDD6 /* Products */,
+				AA9B9CB388EA250D113217E1 /* Pods */,
+				2E5980EDAE7CDE0648CF049A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +97,7 @@
 		FDF697171F204AED00A7FDD6 /* HCLinkPreview */ = {
 			isa = PBXGroup;
 			children = (
+				FDBF97481F21BF4500B3CA60 /* Source */,
 				FDF697181F204AED00A7FDD6 /* AppDelegate.swift */,
 				FDF6971A1F204AED00A7FDD6 /* ViewController.swift */,
 				FDF6971C1F204AED00A7FDD6 /* Main.storyboard */,
@@ -71,9 +115,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDF697271F204AED00A7FDD6 /* Build configuration list for PBXNativeTarget "HCLinkPreview" */;
 			buildPhases = (
+				41AD415ED4B624ACFD6CE242 /* [CP] Check Pods Manifest.lock */,
 				FDF697111F204AED00A7FDD6 /* Sources */,
 				FDF697121F204AED00A7FDD6 /* Frameworks */,
 				FDF697131F204AED00A7FDD6 /* Resources */,
+				0A3FAC67CD02A01F713B5D45 /* [CP] Embed Pods Frameworks */,
+				E3526281450159E0653197D5 /* [CP] Copy Pods Resources */,
+				FDBF97511F21BFB400B3CA60 /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -96,6 +144,7 @@
 				TargetAttributes = {
 					FDF697141F204AED00A7FDD6 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = PDS2N83HDN;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,12 +180,78 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A3FAC67CD02A01F713B5D45 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HCLinkPreview/Pods-HCLinkPreview-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41AD415ED4B624ACFD6CE242 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E3526281450159E0653197D5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HCLinkPreview/Pods-HCLinkPreview-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDBF97511F21BFB400B3CA60 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FDF697111F204AED00A7FDD6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDBF97501F21BF5200B3CA60 /* StringExtensions.swift in Sources */,
+				FDBF974D1F21BF5200B3CA60 /* HCOGDataFetcher.swift in Sources */,
+				FDBF974F1F21BF5200B3CA60 /* HCOGTypes.swift in Sources */,
 				FDF6971B1F204AED00A7FDD6 /* ViewController.swift in Sources */,
+				FDBF974E1F21BF5200B3CA60 /* HCOGTypeProtocols.swift in Sources */,
 				FDF697191F204AED00A7FDD6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,8 +375,10 @@
 		};
 		FDF697281F204AED00A7FDD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F57F637123E0FDD33300E446 /* Pods-HCLinkPreview.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PDS2N83HDN;
 				INFOPLIST_FILE = HCLinkPreview/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hacknocraft.www.HCLinkPreview;
@@ -272,8 +389,10 @@
 		};
 		FDF697291F204AED00A7FDD6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F96F05E804CC1402CC0AC35 /* Pods-HCLinkPreview.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PDS2N83HDN;
 				INFOPLIST_FILE = HCLinkPreview/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hacknocraft.www.HCLinkPreview;
@@ -301,6 +420,7 @@
 				FDF697291F204AED00A7FDD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
